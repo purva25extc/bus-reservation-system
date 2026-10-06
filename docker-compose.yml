@@ -1,0 +1,7 @@
+services:
+  bus-reservation:
+    build: .
+    container_name: bus-reservation-system
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
